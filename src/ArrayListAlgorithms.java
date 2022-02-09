@@ -102,6 +102,32 @@ public class ArrayListAlgorithms {
      *  @return  true if both arraylists are identical, element for element
      */
     public static boolean areIdentical(ArrayList<Integer> numList1, ArrayList<Integer> numList2)
-    { /* implement this method! */ }
+    {
+        int i = 0;
+        for (int num: numList1){
+            if (num != numList2.get(i)){
+                return false;
+            }
+            i++;
+        }
+        return true;
+    }
+
+    /** Removes all elements from numList that are ODD Integers.
+     *
+     *  DOES mutate (modify) elements in numList
+     *  PRECONDITION: numList1.size() > 0
+     *
+     *  @param numList1  arraylist of Integers
+     */
+    public static void removeOdds(ArrayList<Integer> numList)
+    {
+        for (int i = 0; i < numList.size(); i++){
+            if (numList.get(i) % 2 != 0){
+                numList.remove(i);
+                i--;
+            }
+        }
+    }
 
 }
