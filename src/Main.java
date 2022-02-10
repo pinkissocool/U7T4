@@ -111,6 +111,59 @@ public class Main {
         ArrayListAlgorithms.removeOdds(intList13);
         System.out.println(intList13);
 
+        ArrayList<String> stringList3 = new ArrayList<String>(Arrays.asList("these", "sly", "words", "pork", "ugly", "you", "contains", "umm", "by", "several", "sky", "words", "psh", "apple"));
+        ArrayListAlgorithms.wackyVowels(stringList3);
+        System.out.println(stringList3);
+
+        ArrayList<String> stringList4 = new ArrayList<String>(Arrays.asList("sly", "ugly", "umm", "psh"));
+        ArrayListAlgorithms.wackyVowels(stringList4);
+        System.out.println(stringList4);
+
+        ArrayList<String> stringList5 = new ArrayList<String>(Arrays.asList("these", "words", "pork", "contains"));
+        ArrayListAlgorithms.wackyVowels(stringList5);
+        System.out.println(stringList5);
+
+        ArrayList<Integer> intList14 = new ArrayList<Integer>(Arrays.asList(1, 1, 2, 4, 5, 2, 2, 1, 6, 4, 4, 7, 1, 8, 4, 2));
+        ArrayListAlgorithms.removeDuplicates(intList14);
+        System.out.println(intList14);
+        ArrayList<Integer> intList15 = new ArrayList<Integer>(Arrays.asList(1, 1, 1, 2, 1, 1, 1, 1, 3, 2, 1, 2, 2, 4, 3));
+        ArrayListAlgorithms.removeDuplicates(intList15);
+        System.out.println(intList15);
+        ArrayList<Integer> intList16 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5));
+        ArrayListAlgorithms.removeDuplicates(intList16);
+        System.out.println(intList16);
+
+        ArrayList<String> stringList6 = new ArrayList<String>(Arrays.asList("hello", "my", "best", "friend"));
+        ArrayListAlgorithms.duplicateUpperAfter(stringList6);
+        System.out.println(stringList6);
+
+        ArrayList<String> stringList7 = new ArrayList<String>(Arrays.asList("hello", "my", "best", "friend"));
+        ArrayListAlgorithms.duplicateUpperEnd(stringList7);
+        System.out.println(stringList7);
+
+        String mySentence = "This is my sentence!";
+        ArrayList<String> reversedWords = ArrayListAlgorithms.parseWordsAndReverse(mySentence);
+        System.out.println(reversedWords);
+
+        String mySentence2 = "It is a lovely day outside today don't you think?";
+        ArrayList<String> reversedWords2 = ArrayListAlgorithms.parseWordsAndReverse(mySentence2);
+        System.out.println(reversedWords2);
+
+        String mySentence3 = "Hello";
+        ArrayList<String> reversedWords3 = ArrayListAlgorithms.parseWordsAndReverse(mySentence3);
+        System.out.println(reversedWords3);
+
+        ArrayList<String> myWordList = new ArrayList<String>(Arrays.asList("apple", "banana", "cherry", "donut", "bagel", "danish", "berry", "baguette", "soda"));
+        ArrayListAlgorithms.moveBWords(myWordList);
+        System.out.println(myWordList);
+
+
+
+
+
+
+
+
 
 
 
