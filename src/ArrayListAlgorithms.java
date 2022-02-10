@@ -309,20 +309,26 @@ public class ArrayListAlgorithms {
      */
     public static ArrayList<Integer> modes(int[] numList)
     {
-        ArrayList<String> modes = new ArrayList<>();
+        int maxCount = 2;
+        ArrayList<Integer> modes = new ArrayList<>();
         for (int i = 0; i < numList.length; i++){
+            int count = 1;
             for (int k = i+1; k < numList.length; k++){
-                boolean modeFound = false;
-                if (modes.get(i).equals(modes.get(k))){ //f
-                    numList.remove(k);
-                    k--;
-                    modeFound = true;
-                }
-                if (modeFound){
-
+                if (numList[i] == numList[k]){
+                    count++;
                 }
             }
+            if (count == maxCount){
+                modes.add(numList[i]);
+            }
+            else if(count > maxCount){
+                maxCount = count;
+                modes.clear();
+                modes.add(numList[i]);
+            }
         }
+
+        return modes;
     }
 
 }
