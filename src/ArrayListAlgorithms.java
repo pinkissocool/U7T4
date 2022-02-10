@@ -313,7 +313,7 @@ public class ArrayListAlgorithms {
         for (int i = 0; i < numList.length; i++){
             for (int k = i+1; k < numList.length; k++){
                 boolean modeFound = false;
-                if (modes.get(i).equals(modes.get(k))){
+                if (modes.get(i).equals(modes.get(k))){ //f
                     numList.remove(k);
                     k--;
                     modeFound = true;
